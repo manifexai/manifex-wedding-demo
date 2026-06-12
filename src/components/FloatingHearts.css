@@ -1,0 +1,17 @@
+.floating-hearts-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none; /* Let clicks pass through */
+  z-index: 0;
+  overflow: hidden;
+}
+
+.floating-heart {
+  position: absolute;
+  color: var(--color-gold-light);
+  opacity: 0.5;
+  filter: drop-shadow(0px 0px 5px rgba(255, 255, 255, 0.8));
+}

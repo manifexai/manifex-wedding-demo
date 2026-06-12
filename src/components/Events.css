@@ -1,0 +1,108 @@
+.events-section {
+  background-color: var(--color-white);
+  position: relative;
+}
+
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.event-card {
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  background-color: var(--color-ivory);
+}
+
+.event-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(212, 175, 55, 0.15);
+}
+
+.event-image-container {
+  position: relative;
+  height: 250px;
+  overflow: hidden;
+}
+
+.event-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.event-card:hover .event-image {
+  transform: scale(1.1);
+}
+
+.event-date-badge {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: var(--color-white);
+  color: var(--color-gold-dark);
+  padding: 10px 15px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.badge-day {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.badge-month {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 500;
+  margin-top: 3px;
+}
+
+.event-details {
+  padding: 30px;
+}
+
+.event-title {
+  color: var(--color-gold-dark);
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  font-family: var(--font-heading);
+}
+
+.event-time, .event-venue {
+  font-size: 0.95rem;
+  color: var(--color-text-dark);
+  margin-bottom: 10px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.event-time span, .event-venue span {
+  font-weight: 600;
+  color: var(--color-gold);
+  margin-right: 10px;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  min-width: 60px;
+}
+
+.event-desc {
+  margin-top: 20px;
+  color: var(--color-text-light);
+  line-height: 1.6;
+  font-size: 0.95rem;
+  border-top: 1px solid rgba(212, 175, 55, 0.2);
+  padding-top: 20px;
+}
